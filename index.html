@@ -3,16 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loans and Health: Your trusted platform for personalized loan offers and health services.">
     <title>Loans and Health</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 15px 0;
+        }
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #0044cc, #00aaff);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .hero-section h1 {
+            font-size: 2rem;
+        }
+        .hero-section p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #0044cc;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .services h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .service-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            color: #0044cc;
+        }
+
+        /* Blog Section */
+        .blog {
+            padding: 40px 20px;
+        }
+        .blog h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .post {
+            flex: 1 1 calc(50% - 20px);
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .post h3 {
+            color: #0044cc;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #0044cc;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact h2 {
+            margin-bottom: 15px;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .service-cards .card, .blog-posts .post {
+                flex: 1 1 100%;
+            }
+            .hero-section h1 {
+                font-size: 1.8rem;
+            }
+            .hero-section p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
         <div class="container">
-            <h1>Loans and Health</h1>
+            <div class="logo">Loans and Health</div>
             <nav>
                 <ul>
                     <li><a href="#services">Services</a></li>
@@ -26,67 +190,62 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
-            <h2>Get The Best Loan Offers & Health Services</h2>
-            <p>Your one-stop destination for financial and health solutions.</p>
-            <a href="#services" class="cta-button">Explore Services</a>
+            <h1>Your Trusted Partner for Loans and Health Services</h1>
+            <p>Discover tailored loan options and health solutions designed for your needs.</p>
+            <a href="#services" class="cta-button">Explore Now</a>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section">
+    <section id="services" class="services">
         <div class="container">
             <h2>Our Services</h2>
             <div class="service-cards">
                 <div class="card">
                     <h3>Health Insurance</h3>
-                    <p>Get access to the best health insurance plans tailored to your needs.</p>
+                    <p>Comprehensive plans for you and your family.</p>
                 </div>
                 <div class="card">
                     <h3>Personal Loans</h3>
-                    <p>Find the most competitive personal loan options in the market.</p>
+                    <p>Quick and hassle-free loan approvals.</p>
                 </div>
                 <div class="card">
-                    <h3>Mortgage Loans</h3>
-                    <p>Explore mortgage loans for first-time homebuyers and refinancing.</p>
+                    <h3>Mortgage Solutions</h3>
+                    <p>Get the best rates for your dream home.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Blog Section -->
-    <section id="blog" class="section">
+    <section id="blog" class="blog">
         <div class="container">
             <h2>Latest Blog Posts</h2>
             <div class="blog-posts">
-                <div class="post-card">
+                <div class="post">
                     <h3>Understanding Health Insurance</h3>
-                    <p>Get tips on choosing the right health insurance plan for you and your family.</p>
+                    <p>Tips to select the best insurance plan for you.</p>
                 </div>
-                <div class="post-card">
-                    <h3>How to Get a Personal Loan</h3>
-                    <p>Learn the steps to secure the best personal loan rates.</p>
-                </div>
-                <div class="post-card">
-                    <h3>Mortgage 101: A Beginner's Guide</h3>
-                    <p>Everything you need to know about getting a mortgage loan.</p>
+                <div class="post">
+                    <h3>How to Secure a Personal Loan</h3>
+                    <p>A step-by-step guide to loan applications.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>If you have any questions or need help, feel free to reach out!</p>
-            <p>Email: info@loansandhealth.com</p>
+            <p>Email: info@loansandhealth.shop</p>
+            <p>Phone: +1 (800) 123-4567</p>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Loans and Health. All Rights Reserved.</p>
-        </div>
+        <p>&copy; 2024 Loans and Health. All Rights Reserved.</p>
     </footer>
 
 </body>
