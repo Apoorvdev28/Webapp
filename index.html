@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Loans and Health: Your trusted platform for personalized loan offers and health services.">
+    <meta name="description" content="Promote Loans and Nutra Offers with Loans and Health - Your trusted platform for financial and health solutions.">
     <title>Loans and Health</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <style>
@@ -24,7 +24,7 @@
             color: inherit;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -61,7 +61,7 @@
 
         /* Hero Section */
         .hero-section {
-            background: linear-gradient(135deg, #333, #555);
+            background: linear-gradient(135deg, #0d8511, #4CAF50);
             color: white;
             text-align: center;
             padding: 40px 20px;
@@ -83,17 +83,18 @@
             border-radius: 5px;
         }
 
-        /* Services Section */
-        .services {
+        /* Sections */
+        .section {
             padding: 40px 20px;
             background-color: #fff;
         }
-        .services h2 {
+        .section h2 {
             text-align: center;
             margin-bottom: 20px;
-            color: #FF6600;
         }
-        .service-cards {
+
+        /* Cards */
+        .cards {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
@@ -102,64 +103,31 @@
         .card {
             flex: 1 1 calc(33.333% - 20px);
             background-color: #f9f9f9;
-            border: 1px solid #ddd;
             border-radius: 10px;
             padding: 20px;
+            border: 1px solid #ddd;
             text-align: center;
             position: relative;
         }
         .card h3 {
-            font-size: 1.2rem;
-            color: #333;
+            margin-top: 10px;
         }
         .card .logo {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: #FF6600;
-            margin-bottom: 10px;
         }
 
         /* Blog Section */
-        .blog {
-            padding: 40px 20px;
-            background-color: #fff;
-        }
-        .blog h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #FF6600;
-        }
-        .blog-posts {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .post {
+        .blog .post {
             flex: 1 1 calc(33.333% - 20px);
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            position: relative;
-        }
-        .post h3 {
-            color: #333;
-        }
-        .post .logo {
-            font-size: 2rem;
-            color: #FF6600;
-            margin-bottom: 10px;
         }
 
         /* Contact Section */
         .contact {
             background-color: #FF6600;
             color: white;
-            padding: 40px 20px;
             text-align: center;
-        }
-        .contact h2 {
-            margin-bottom: 15px;
+            padding: 20px 0;
         }
         .contact p {
             margin: 5px 0;
@@ -175,14 +143,8 @@
 
         /* Responsive Styles */
         @media (max-width: 768px) {
-            .service-cards .card, .blog-posts .post {
+            .cards .card, .blog .post {
                 flex: 1 1 100%;
-            }
-            .hero-section h1 {
-                font-size: 1.8rem;
-            }
-            .hero-section p {
-                font-size: 0.9rem;
             }
         }
     </style>
@@ -195,7 +157,8 @@
             <div class="logo">Loans and Health</div>
             <nav>
                 <ul>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#loans">Loans</a></li>
+                    <li><a href="#health">Health</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -206,70 +169,82 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
-            <h1>Your Trusted Partner for Loans and Health Services</h1>
-            <p>Discover tailored loan options and health solutions designed for your needs.</p>
-            <a href="#services" class="cta-button">Explore Now</a>
+            <h1>Your Trusted Platform for Loans and Health Solutions</h1>
+            <p>Personalized loans and Nutra products for a healthier life.</p>
+            <a href="#services" class="cta-button">Get Started</a>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Loans Section -->
+    <section id="loans" class="section">
         <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <div class="logo">💳</div>
-                    <h3>Health Insurance</h3>
-                    <p>Comprehensive plans for you and your family.</p>
-                </div>
+            <h2>Loans</h2>
+            <div class="cards">
                 <div class="card">
                     <div class="logo">🏦</div>
                     <h3>Personal Loans</h3>
-                    <p>Quick and hassle-free loan approvals.</p>
+                    <p>Quick approvals for your personal financial needs.</p>
                 </div>
                 <div class="card">
                     <div class="logo">🏠</div>
-                    <h3>Mortgage Solutions</h3>
-                    <p>Get the best rates for your dream home.</p>
+                    <h3>Home Loans</h3>
+                    <p>Secure your dream home with our mortgage options.</p>
+                </div>
+                <div class="card">
+                    <div class="logo">💼</div>
+                    <h3>Business Loans</h3>
+                    <p>Get funding to grow your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Section -->
+    <section id="health" class="section">
+        <div class="container">
+            <h2>Health & Wellness</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="logo">💊</div>
+                    <h3>Dietary Supplements</h3>
+                    <p>Boost your health with our range of supplements.</p>
+                    <a href="#" class="cta-button">Shop Now</a>
+                </div>
+                <div class="card">
+                    <div class="logo">🧴</div>
+                    <h3>Skincare Products</h3>
+                    <p>Glow with our premium skincare range.</p>
+                    <a href="#" class="cta-button">Learn More</a>
+                </div>
+                <div class="card">
+                    <div class="logo">🧘</div>
+                    <h3>Fitness Plans</h3>
+                    <p>Stay active with our expert-guided fitness programs.</p>
+                    <a href="#" class="cta-button">Start Today</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Blog Section -->
-    <section id="blog" class="blog">
+    <section id="blog" class="section blog">
         <div class="container">
-            <h2>Latest Blog Posts</h2>
-            <div class="blog-posts">
-                <div class="post">
+            <h2>Latest Blogs</h2>
+            <div class="cards">
+                <div class="card post">
                     <div class="logo">📚</div>
-                    <h3>Understanding Health Insurance</h3>
-                    <p>Tips to select the best insurance plan for you.</p>
+                    <h3>How to Choose a Loan</h3>
+                    <p>Tips to secure the best loan deals.</p>
                 </div>
-                <div class="post">
-                    <div class="logo">📈</div>
-                    <h3>How to Secure a Personal Loan</h3>
-                    <p>A step-by-step guide to loan applications.</p>
-                </div>
-                <div class="post">
-                    <div class="logo">🏡</div>
-                    <h3>Mortgage Basics</h3>
-                    <p>Learn everything you need to know about mortgages.</p>
-                </div>
-                <div class="post">
-                    <div class="logo">💰</div>
-                    <h3>Budgeting Tips</h3>
-                    <p>Effective budgeting techniques for financial stability.</p>
-                </div>
-                <div class="post">
+                <div class="card post">
                     <div class="logo">🍎</div>
-                    <h3>Healthy Living on a Budget</h3>
-                    <p>Maintain your health without breaking the bank.</p>
+                    <h3>Healthy Diet on a Budget</h3>
+                    <p>Maintain health without overspending.</p>
                 </div>
-                <div class="post">
+                <div class="card post">
                     <div class="logo">📊</div>
-                    <h3>Credit Score Tips</h3>
-                    <p>Improve your credit score with actionable advice.</p>
+                    <h3>Boost Your Credit Score</h3>
+                    <p>Effective strategies for financial stability.</p>
                 </div>
             </div>
         </div>
@@ -287,7 +262,4 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Loans and Health. All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
+   
