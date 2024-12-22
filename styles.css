@@ -1,171 +1,106 @@
 /* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-    background-color: #f7f7f7;
-    color: #333;
 }
-
 .container {
-    width: 90%;
-    margin: 0 auto;
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-
-/* Header Styles */
 header {
-    background-color: #0a192f;
-    color: #ffffff;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 0;
 }
-
 header h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.5em;
-    display: inline;
+    font-size: 1.8rem;
+    text-align: center;
 }
-
-nav {
-    display: inline-block;
-    float: right;
-}
-
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
 }
-
 nav ul li {
     display: inline;
-    margin-left: 25px;
 }
-
 nav ul li a {
-    color: #ffffff;
-    font-size: 1.2em;
+    color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
 }
-
-/* Hero Section */
 .hero-section {
-    background-color: #1e3a8a;
-    color: white;
+    background-color: #f4f4f4;
     text-align: center;
-    padding: 100px 0;
+    padding: 40px 20px;
 }
-
 .hero-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
-
-.hero-section p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
 .cta-button {
-    background-color: #ff7a00;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0044cc;
     color: white;
-    padding: 15px 25px;
-    border-radius: 5px;
-    font-size: 1.1em;
     text-decoration: none;
-    transition: background-color 0.3s;
+    border-radius: 5px;
 }
-
-.cta-button:hover {
-    background-color: #f26400;
-}
-
-/* Services Section */
 .section {
-    padding: 50px 0;
-    background-color: #ffffff;
+    padding: 40px 20px;
 }
-
-.service-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.card {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.card h3 {
-    margin-bottom: 15px;
-    font-size: 1.8em;
-    color: #333;
-}
-
-.card p {
-    font-size: 1.1em;
-    color: #777;
-    margin-bottom: 20px;
-}
-
-/* Blog Section */
+.service-cards,
 .blog-posts {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
-
+.card,
 .post-card {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
-
-.post-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
+.card h3,
 .post-card h3 {
-    margin-bottom: 15px;
-    font-size: 1.6em;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
-
-.post-card p {
-    font-size: 1.1em;
-    color: #777;
-    margin-bottom: 20px;
-}
-
-/* Contact Section */
-#contact {
-    background-color: #f7f7f7;
-    text-align: center;
-}
-
 footer {
-    background-color: #0a192f;
-    color: #ffffff;
-    padding: 20px 0;
+    background-color: #222;
+    color: white;
     text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .service-cards .card,
+    .blog-posts .post-card {
+        flex: 1 1 100%;
+    }
+    .hero-section h2 {
+        font-size: 1.5rem;
+    }
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
 }
