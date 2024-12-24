@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Promote Loans and Nutra Offers with Loans and Health - Your trusted platform for financial and health solutions.">
+    <meta name="description" content="Loans and Health - Your trusted platform for financial and health solutions, offering personalized loans and health products.">
     <title>Loans and Health</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <style>
@@ -13,16 +14,19 @@
             font-family: 'Open Sans', sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f4f4f4;
+            background-color: #d3f1f9; /* Updated background color */
         }
+
         h1, h2, h3 {
             font-family: 'Poppins', sans-serif;
             margin: 0;
         }
+
         a {
             text-decoration: none;
             color: inherit;
         }
+
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -34,16 +38,18 @@
             background-color: #333;
             color: white;
             padding: 15px 0;
+            text-align: center;
         }
+
         header .logo {
             font-size: 1.8rem;
             font-weight: 600;
-            text-align: center;
         }
+
         nav {
             margin-top: 10px;
-            text-align: center;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -51,9 +57,11 @@
             justify-content: center;
             gap: 15px;
         }
+
         nav ul li {
             display: inline;
         }
+
         nav ul li a {
             color: #FF6600;
             font-weight: 600;
@@ -64,33 +72,45 @@
             background: linear-gradient(135deg, #0d8511, #4CAF50);
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 60px 20px;
         }
+
         .hero-section h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
+            margin-bottom: 15px;
         }
+
         .hero-section p {
-            font-size: 1rem;
+            font-size: 1.2rem;
             margin: 10px 0;
         }
+
         .cta-button {
             display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
+            padding: 15px 30px;
             background-color: #FF6600;
             color: white;
             font-weight: 600;
             border-radius: 5px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #e65c00;
         }
 
         /* Sections */
         .section {
-            padding: 40px 20px;
+            padding: 60px 20px;
             background-color: #fff;
         }
+
         .section h2 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 2rem;
         }
 
         /* Cards */
@@ -100,6 +120,7 @@
             gap: 20px;
             justify-content: center;
         }
+
         .card {
             flex: 1 1 calc(33.333% - 20px);
             background-color: #f9f9f9;
@@ -107,13 +128,20 @@
             padding: 20px;
             border: 1px solid #ddd;
             text-align: center;
-            position: relative;
+            transition: transform 0.3s ease;
         }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
         .card h3 {
             margin-top: 10px;
         }
+
         .card .logo {
-            font-size: 2.5rem;
+            font-size: 3rem;
             color: #FF6600;
         }
 
@@ -127,8 +155,9 @@
             background-color: #FF6600;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 40px 20px;
         }
+
         .contact p {
             margin: 5px 0;
         }
@@ -138,19 +167,36 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 1rem;
         }
 
         /* Responsive Styles */
         @media (max-width: 768px) {
-            .cards .card, .blog .post {
+            .cards .card {
                 flex: 1 1 100%;
             }
         }
+
+        /* Date and Time Box Styling */
+        #time {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-weight: bold;
+            font-size: 16px; /* Increased font size */
+            background-color: #FF6600; /* Background color */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
     </style>
 </head>
-<body>
 
+<body>
     <!-- Header -->
     <header>
         <div class="container">
@@ -166,11 +212,14 @@
         </div>
     </header>
 
+    <!-- Date and Time Box -->
+    <div id="time"></div>
+
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
             <h1>Your Trusted Platform for Loans and Health Solutions</h1>
-            <p>Personalized loans and Nutra products for a healthier life.</p>
+            <p>Personalized loans and Nutra products for a healthier life. Start your journey today!</p>
             <a href="#services" class="cta-button">Get Started</a>
         </div>
     </section>
@@ -178,7 +227,7 @@
     <!-- Loans Section -->
     <section id="loans" class="section">
         <div class="container">
-            <h2>Loans</h2>
+            <h2>Our Loan Services</h2>
             <div class="cards">
                 <div class="card">
                     <div class="logo">🏦</div>
@@ -199,7 +248,7 @@
         </div>
     </section>
 
-    <!-- Health Section -->
+    <!-- Health & Wellness Section -->
     <section id="health" class="section">
         <div class="container">
             <h2>Health & Wellness</h2>
@@ -224,10 +273,36 @@
                 </div>
             </div>
         </div>
+
+        <!-- New "Male Enhancement" Category -->
+        <div class="container">
+            <h2>Male Enhancement</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="logo">💪</div>
+                    <h3>Powerful Male Enhancement</h3>
+                    <p>Increase energy, performance, and vitality with our natural male enhancement products.</p>
+                    <a href="#" class="cta-button">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Home Comforts Category -->
+        <div class="container">
+            <h2>Home Comforts</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="logo">🔥</div>
+                    <h3>Cozy Cabin Heater</h3>
+                    <p>Keep your space warm and cozy with our energy-efficient cabin heater.</p>
+                    <a href="#" class="cta-button">Buy Now</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Blog Section -->
-    <section id="blog" class="section blog">
+    <section id="blog" class="section">
         <div class="container">
             <h2>Latest Blogs</h2>
             <div class="cards">
@@ -262,4 +337,24 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Loans and Health. All Rights Reserved.</p>
-    
+    </footer>
+
+    <!-- JavaScript for Real-Time Date and Time -->
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const date = now.toLocaleDateString(); // Formats the date
+
+            document.getElementById('time').textContent = `${date} ${hours}:${minutes}:${seconds}`;
+        }
+
+        // Update the time every second
+        setInterval(updateTime, 1000);
+        updateTime(); // Initialize time immediately when the page loads
+    </script>
+</body>
+
+</html>
